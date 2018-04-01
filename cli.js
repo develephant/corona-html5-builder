@@ -1,7 +1,8 @@
 #! /usr/bin/env node
 
 //-----------------------------------------------------------------------------
-// Corona HTML5 Plugin CLI
+// Corona HTML5 Builder
+// (c)2018 C. Byerley (develephant)
 //-----------------------------------------------------------------------------
 const path = require("path")
 
