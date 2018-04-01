@@ -50,7 +50,7 @@ excludeFiles =
 {
   -- Exclude unnecessary files for each platform
   all = { "Icon.png", "Icon-*dpi.png", "Images.xcassets", "package.lua" },
-  android = { "LaunchScreen.storyboardc", },
+  ...
 },
 ```
 
