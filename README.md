@@ -80,6 +80,8 @@ Generate an HTML5 build of your project. The HTML5 files will be output to the _
 corona-html5 build
 ```
 
+__Note for macOS users__: _To use the `build` command you must run the "Setup Corona Native.app" found in the __/Applications/Corona-<build>/Native__ directory._
+
 ### watch
 
 Start a live browser session of your HTML5 build.
