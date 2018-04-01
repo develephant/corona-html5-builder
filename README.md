@@ -4,15 +4,23 @@ ___A CLI tool to easily build, watch, and debug your Corona HTML5 projects.___
 
 ## Requirements
 
-You will need __NodeJS__ installed for _macOS_ or _Windows_.
-
-[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+You will need __[NodeJS](https://nodejs.org/en/download/)__ installed for _macOS_ or _Windows_.
 
 ## Installation
 
 ```
 npm install -g @develphant/corona-html5-builder
 ```
+
+## Usage
+
+### Setup
+
+### Initalize
+
+### Build
+
+### Watch/Debug
 
 ## CLI
 
@@ -57,15 +65,6 @@ Start a live browser session of your HTML5 debug build.
 ```
 corona-html5 debug
 ```
-
-## Usage
-
-### Getting started
-
-### Building
-
-### Watching
-
 ___
 
 &copy;2018 C. Byerley ([develephant](https://develephant.com))
