@@ -32,6 +32,12 @@ The directory tree should end up looking something like:
 
 ### Initialize
 
+Using a command line tool, navigate to the __<base_directory/>/<corona_project/>__ directory and run:
+
+```
+corona-html5 init --app <corona_app_name> --html <base_directory/>/html5_output
+```
+
 ### Build
 
 ### Watch/Debug
