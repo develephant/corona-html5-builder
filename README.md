@@ -60,7 +60,7 @@ corona-html5 init --app <corona_app_name> --html </dest/to/html5/output_dir>
 
 ### build
 
-Generate an HTML5 build of your project.
+Generate an HTML5 build of your project. The HTML5 files will be output to the __html5_output__ directory. See __[Setup](#setup)__ above.
 
 ```
 corona-html5 build
