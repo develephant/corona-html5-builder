@@ -1,0 +1,41 @@
+{
+  "name": "@develephant/corona-html5-builder",
+  "version": "0.1.0",
+  "description": "A CLI tool to easily build, watch, and debug your Corona HTML5 projects.",
+  "preferGlobal": true,
+  "bin": {
+    "corona-html5": "cli.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develephant/corona-html5-builder.git"
+  },
+  "keywords": [
+    "corona",
+    "coronasdk",
+    "html5",
+    "plugins",
+    "games",
+    "applications",
+    "build",
+    "watcher"
+  ],
+  "author": "develephant <code@develephant.com> (http://www.develephant.com/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/develephant/corona-html5-builder/issues"
+  },
+  "homepage": "https://github.com/develephant/corona-html5-builder#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "browser-sync": "^2.23.6",
+    "colors": "^1.2.1",
+    "luaparse": "^0.2.1",
+    "shelljs": "^0.8.1"
+  },
+  "devDependencies": {}
+}
