@@ -78,7 +78,7 @@ Note: _The watch process will need to run in its own command line shell._
 
 ### debug
 
-Start a live browser session of your HTML5 debug build.
+Start a live browser session of your HTML5 debug build (index-debug.html).
 
 ```
 corona-html5 debug
