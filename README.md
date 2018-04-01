@@ -37,7 +37,7 @@ _Do not create the __html5_output__ directory in the <corona_project> directory.
 Using a command line tool, navigate to the __<base_directory>/<corona_project>__ directory and run:
 
 ```
-corona-html5 init --app <corona_app_name> --html full/path/to/<base_directory/>/html5_output
+corona-html5 init --app <corona_app_name> --html full/path/to/<base_directory>/html5_output
 ```
 
 ### Build
