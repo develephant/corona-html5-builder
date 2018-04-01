@@ -16,6 +16,20 @@ npm install -g @develphant/corona-html5-builder
 
 ### Setup
 
+ - Create a new base directory for your Corona project and HTML5 output.
+ - Using Corona, create a new project and select the base directory.
+ - Create a directory called __html5_output__ (or whatever) in the base directory.
+
+The directory tree should look something like:
+
+```
+base_directory/
+  corona_project/
+    main.lua
+    ...
+  html5_output/
+```
+
 ### Initialize
 
 ### Build
@@ -39,7 +53,7 @@ corona-html5
 Initialize the `package.lua` configuration file.
 
 ```
-corona-html5 init --app <app_name> --html </dest/to/html5/output_dir>
+corona-html5 init --app <corona_app_name> --html </dest/to/html5/output_dir>
 ```
 
 ### build
