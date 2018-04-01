@@ -12,6 +12,8 @@ You will need __[NodeJS](https://nodejs.org/en/download/)__ installed for _macOS
 npm install -g @develphant/corona-html5-builder
 ```
 
+The CLI will available globally via command line as `corona-html5`.
+
 ## Usage
 
 ### Setup
