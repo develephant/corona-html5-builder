@@ -16,7 +16,7 @@ npm install -g @develphant/corona-html5-builder
 
 ### Setup
 
-### Initalize
+### Initialize
 
 ### Build
 
