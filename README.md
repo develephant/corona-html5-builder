@@ -30,6 +30,8 @@ The directory tree should end up looking something like:
   html5_output/
 ```
 
+_Do not create the __html5_output__ directory in the <corona_directory>_
+
 ### Initialize
 
 Using a command line tool, navigate to the __<base_directory/>/<corona_project/>__ directory and run:
