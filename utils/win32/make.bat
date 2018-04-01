@@ -1,5 +1,8 @@
 @echo off
 
+rem Corona HTML5 Node Kit - Plugin Builder
+rem (c)2018 C. Byerley (develephant)
+
 set wd=%~dp0
 set buildlua=%1
 
