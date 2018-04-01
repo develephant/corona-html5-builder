@@ -85,7 +85,7 @@ corona-html5 build
 Start a live browser session of your HTML5 build.
 
 ```
-corona-html5 watch
+corona-html5 watch [--proxy <proxy-address>]
 ```
 
 Note: _The watch process will need to run in its own command line shell._
@@ -95,7 +95,7 @@ Note: _The watch process will need to run in its own command line shell._
 Start a live browser session of your HTML5 debug build (index-debug.html).
 
 ```
-corona-html5 debug
+corona-html5 debug [--proxy <proxy-address>]
 ```
 
 Note: _The debug process will need to run in its own command line shell._
