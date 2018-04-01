@@ -39,6 +39,10 @@ parser.addArgument('--html',
 {help: 'The html output directory.',
 metavar: 'HTML_DIR'})
 
+parser.addArgument('--proxy',
+{help: 'Proxy address. For watch and debug command.',
+metavar: 'PROXY_ADDR'})
+
 const args = parser.parseArgs()
 
 switch(args.action) {
@@ -49,9 +53,9 @@ switch(args.action) {
     build()
     break
   case 'watch':
-    watch()
+    watch(false, args.proxy)
     break
   case 'debug':
-    watch(true)
+    watch(true, args.proxy)
     break
 }
