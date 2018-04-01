@@ -46,19 +46,13 @@ corona-html5 init --app <corona_app_name> --html full/path/to/<base_directory>/h
 
 ## CLI
 
-The commands need to be run in the project folder using a terminal shell.
-
-_CLI name_
-
-```
-corona-html5
-```
+All commands need to be run using a command line tool pointed at the __<base_directory>/<corona_project>__ directory.
 
 ## Commands
 
 ### init
 
-Initialize the `package.lua` configuration file.
+Initialize the `package.lua` configuration file. See __[Initialze](#initialize)__ above.
 
 ```
 corona-html5 init --app <corona_app_name> --html </dest/to/html5/output_dir>
@@ -80,6 +74,8 @@ Start a live browser session of your HTML5 build.
 corona-html5 watch
 ```
 
+Note: _The watch process will need to run in its own command line shell._
+
 ### debug
 
 Start a live browser session of your HTML5 debug build.
@@ -87,6 +83,8 @@ Start a live browser session of your HTML5 debug build.
 ```
 corona-html5 debug
 ```
+
+Note: _The debug process will need to run in its own command line shell._
 ___
 
 &copy;2018 C. Byerley ([develephant](https://develephant.com))
