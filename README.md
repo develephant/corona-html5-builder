@@ -40,7 +40,7 @@ Using a command line tool, navigate to the __<base_directory>/<corona_project>__
 corona-html5 init --app <corona_app_name> --html full/path/to/<base_directory>/html5_output
 ```
 
-### Develop
+### Development
 
 See the command line options below to start working with your project.
 
