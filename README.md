@@ -23,8 +23,8 @@ npm install -g @develphant/corona-html5-builder
 The directory tree should look something like:
 
 ```
-base_directory/
-  corona_project/
+<base_directory>/
+  <corona_project>/
     main.lua
     ...
   html5_output/
