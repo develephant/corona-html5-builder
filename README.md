@@ -17,10 +17,10 @@ npm install -g @develphant/corona-html5-builder
 ### Setup
 
  - Create a new base directory for your Corona project and HTML5 output.
- - Using Corona, create a new project and select the base directory.
- - Create a directory called __html5_output__ (or whatever) in the base directory.
+ - Using Corona, create a new project and select the base directory as the destination.
+ - Create a directory called __html5_output__ (or whatever) in the base directory as well.
 
-The directory tree should look something like:
+The directory tree should end up looking something like:
 
 ```
 <base_directory>/
