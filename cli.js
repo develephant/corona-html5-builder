@@ -16,33 +16,53 @@ const pkg = require('./package')
 const ArgParser = require('argparse').ArgumentParser
 
 const parser = new ArgParser({
-  description: "Corona HTML5 Watcher",
+  description: "Corona HTML5 Builder",
   version: pkg.version,
-  allowAbbrev: false,
+  prog: "coronahtml5",
   epilog: '(c)2018 C. Byerley [develephant]'
 })
 
-parser.addArgument('action', {
-  help: "Corona HTML5 Watcher",
-  choices: [
-    'init',
-    'build',
-    'watch',
-    'debug'
-  ]
+let subparsers = parser.addSubparsers({
+  title: "commands",
+  dest: "action",
+  addHelp: true,
+  help: "Use -h, --help for command arguments."
 })
 
-parser.addArgument('--app',
-{help: 'The application name.',
-metavar: 'APP_NAME'})
+let init_parser = subparsers.addParser('init', {
+  help: "Initialize the package.lua config file.",
+})
+init_parser.addArgument('--app', {
+  action: 'store',
+  help: "The Corona application project name.",
+  required: true,
+  metavar: "APP_NAME"
+})
 
-parser.addArgument('--html',
-{help: 'The html output directory.',
-metavar: 'HTML_DIR'})
+init_parser.addArgument('--html', {
+  action: 'store',
+  help: "Full path to the HTML5 output directory",
+  required: true,
+  metavar: "HTML5_DIR"
+})
 
-parser.addArgument('--proxy',
-{help: 'Proxy address. For watch and debug command.',
-metavar: 'PROXY_ADDR'})
+let build_parser = subparsers.addParser('build', { 
+  help: "Build the Corona HTML5 project output."
+})
+
+let watch_parser = subparsers.addParser('watch', {
+  help: "Start a live browser session of the project."
+})
+watch_parser.addArgument(['-d', '--debug'], {
+  action: 'storeTrue',
+  help: "Open as debug session (index-debug.html).",
+  defaultValue: false
+})
+watch_parser.addArgument('--proxy', {
+  action: 'store',
+  help: "A proxy address for the session.",
+  metavar: "PROXY_ADDR"
+})
 
 const args = parser.parseArgs()
 
@@ -54,9 +74,6 @@ switch(args.action) {
     build()
     break
   case 'watch':
-    watch(false, args.proxy)
-    break
-  case 'debug':
-    watch(true, args.proxy)
+    watch(args.debug, args.proxy)
     break
 }

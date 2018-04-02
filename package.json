@@ -4,7 +4,7 @@
   "description": "A CLI tool to easily build, watch, and debug your Corona HTML5 projects.",
   "preferGlobal": true,
   "bin": {
-    "corona-html5": "cli.js"
+    "coronahtml5": "cli.js"
   },
   "scripts": {},
   "repository": {
