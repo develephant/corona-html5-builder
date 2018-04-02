@@ -91,7 +91,7 @@ __Note for macOS users__: To use the `build` command you must run the "Setup Cor
 Start a live browser session of your HTML5 build. Add the `-d` flag to open a debug session.
 
 ```
-coronahtml5 watch [-d|--debug] [--proxy <proxy-address>]
+coronahtml5 watch [-d] [--proxy <proxy-address>]
 ```
 
 Note: _The watch process runs in its own shell session._
