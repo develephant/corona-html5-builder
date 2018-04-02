@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/develephant/corona-html5-builder#readme",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "dependencies": {
     "argparse": "^1.0.10",
