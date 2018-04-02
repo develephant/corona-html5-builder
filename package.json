@@ -1,6 +1,6 @@
 {
   "name": "@develephant/corona-html5-builder",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A CLI tool to easily build, watch, and debug your Corona HTML5 projects.",
   "preferGlobal": true,
   "bin": {
