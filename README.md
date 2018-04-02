@@ -68,7 +68,7 @@ All commands need to be run using a command line tool pointed at the __<base_dir
 
 ### init
 
-Initialize the `package.lua` configuration file. See __[Initialze](#initialize)__ above.
+Initialize the `package.lua` configuration file. See __[Initialize](#initialize)__ above.
 
 ```
 coronahtml5 init --app <corona_app_name> --html </dest/to/html5/output_dir>
