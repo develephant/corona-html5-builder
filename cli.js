@@ -7,6 +7,7 @@
 const path = require("path")
 
 const paths = require("./lib/paths")
+const { pp } = require("./lib/clr")
 
 const watch = require('./lib/watch')
 const build = require('./lib/build')
@@ -68,6 +69,9 @@ const args = parser.parseArgs()
 
 switch(args.action) {
   case 'init':
+    pp.dashes()
+    pp.title()
+    pp.dashes()
     core(args.app, args.html)
     break
   case 'build':
