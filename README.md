@@ -66,6 +66,8 @@ All commands need to be run using a command line tool pointed at the __<base_dir
 
 ## Commands
 
+To get more details on each commands arguments, run `coronahtml5 <command> -h`.
+
 ### init
 
 Initialize the `package.lua` configuration file. See __[Initialize](#initialize)__ above.
@@ -81,7 +83,7 @@ Note: _All arguments are required._
 Generate an HTML5 build of your project. The HTML5 files will be output to the __html5_output__ directory. See __[Setup](#setup)__ above.
 
 ```
-coronahtml5 build
+coronahtml5 build [--clean]
 ```
 
 __Note for macOS users__: To use the `build` command you must run the "Setup Corona Native.app" found in the `/Applications/Corona-<build>/Native/` directory. You will need to do this for each new Corona build you install (if using dailies).

@@ -42,13 +42,18 @@ init_parser.addArgument('--app', {
 
 init_parser.addArgument('--html', {
   action: 'store',
-  help: "Full path to the HTML5 output directory",
+  help: "Full path to the HTML5 output directory.",
   required: true,
   metavar: "HTML5_DIR"
 })
 
 let build_parser = subparsers.addParser('build', { 
   help: "Build the Corona HTML5 project output."
+})
+build_parser.addArgument('--clean', {
+  action: 'storeTrue',
+  help: "Clean the HTML5 output directory before build.",
+  defaultValue: false
 })
 
 let watch_parser = subparsers.addParser('watch', {
@@ -75,7 +80,7 @@ switch(args.action) {
     core(args.app, args.html)
     break
   case 'build':
-    build()
+    build(args.clean)
     break
   case 'watch':
     watch(args.debug, args.proxy)
