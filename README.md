@@ -14,6 +14,10 @@ npm install -g @develephant/corona-html5-builder
 
 The CLI will available globally via command line as `coronahtml5`.
 
+### Screencast
+
+[Click here to watch a screencast overview.](https://www.youtube.com/watch?v=pcc0OQC2FG0)
+
 ## Usage
 
 ### Setup
