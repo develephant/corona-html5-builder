@@ -5,6 +5,7 @@
 // (c)2018 C. Byerley (develephant)
 //-----------------------------------------------------------------------------
 const path = require("path")
+const shell = require("shelljs")
 
 const paths = require("./lib/paths")
 const { pp } = require("./lib/clr")
@@ -15,6 +16,14 @@ const core = require('./lib/core')
 
 const pkg = require('./package')
 const ArgParser = require('argparse').ArgumentParser
+
+//check we are in a valid directory
+if (!shell.test('-f', path.join(paths.base, 'main.lua'))) {
+  pp.dashes()
+  pp.err("You must be in a project directory to run commands.")
+  pp.dashes()
+  return
+}
 
 const parser = new ArgParser({
   description: "Corona HTML5 Builder",
